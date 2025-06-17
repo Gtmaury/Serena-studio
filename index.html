@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna Studio - Belleza y Cuidado Personal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="script.js" />
+  </head>
+  <body class="bg-primary text-dark">
+    <!-- Header & Navigation -->
+    <header class="bg-primary shadow-md sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-3xl font-serif font-bold text-dark"
+          >Anna Studio</a
+        >
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#about" class="nav-link text-dark">Nosotros</a>
+          <a href="#services" class="nav-link text-dark">Servicios</a>
+          <a href="#gallery" class="nav-link text-dark">Galería</a>
+          <a href="#contact" class="nav-link text-dark">Contacto</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+        <a href="#about" class="block py-2 text-dark">Nosotros</a>
+        <a href="#services" class="block py-2 text-dark">Servicios</a>
+        <a href="#gallery" class="block py-2 text-dark">Galería</a>
+        <a href="#contact" class="block py-2 text-dark">Contacto</a>
+        <a
+          href="#contact"
+          class="block mt-4 bg-accent text-white py-2 px-4 rounded-full text-center"
+          >Agenda Ahora</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-secondary">
+      <div class="container mx-auto px-6 py-20 md:py-32 text-center">
+        <h1
+          class="text-4xl md:text-6xl font-serif text-dark mb-4 leading-tight"
+        >
+          Donde la Belleza y la Serenidad se Encuentran
+        </h1>
+        <p class="text-lg md:text-xl text-dark max-w-2xl mx-auto mb-8">
+          Entra en un mundo de tranquilidad y déjanos consentirte. Nos dedicamos
+          a realzar tu belleza natural y promover el bienestar desde adentro
+          hacia afuera.
+        </p>
+        <a
+          href="#services"
+          class="bg-accent text-white py-3 px-8 rounded-full text-lg hover:bg-opacity-80 transition duration-300"
+          >Explora Nuestros Servicios</a
+        >
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mx-auto px-6 py-20">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2">
+          <img
+            src="https://placehold.co/600x700/F4E9E1/5C4B42?text=Anna+Studio"
+            alt="Interior of Anna Studio"
+            class="rounded-lg shadow-xl w-full"
+          />
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-4xl font-serif text-dark mb-6">
+            Bienvenida a Anna Studio
+          </h2>
+          <p class="text-lg text-dark mb-4">
+            Fundado con pasión por la belleza y compromiso con la calidad, Anna
+            Studio es tu oasis personal en la ciudad. Creemos que el autocuidado
+            no es un lujo, sino una necesidad. Nuestro equipo de estilistas,
+            terapeutas y esteticistas expertos está aquí para brindarte una
+            experiencia personalizada que te dejará sintiéndote renovada, segura
+            y hermosa.
+          </p>
+          <p class="text-lg text-dark">
+            Utilizamos solo productos de la más alta calidad y libres de
+            crueldad animal en todos nuestros tratamientos, asegurando que
+            recibas el mejor cuidado mientras respetamos nuestro planeta.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-secondary py-20">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-serif text-dark text-center mb-12">
+          Nuestros Servicios Estrella
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card 1 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">✨</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">
+              Faciales Rejuvenecedores
+            </h3>
+            <p class="text-dark">
+              Tratamientos personalizados para limpiar, exfoliar y nutrir tu
+              piel, dándote un brillo radiante.
+            </p>
+          </div>
+          <!-- Service Card 2 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">💅</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">
+              Manicuras de Lujo
+            </h3>
+            <p class="text-dark">
+              Cuidado impecable de las uñas, desde manicuras clásicas hasta
+              geles de larga duración, finalizando con un relajante masaje de
+              manos.
+            </p>
+          </div>
+          <!-- Service Card 3 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">✂️</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">
+              Estilismo Profesional
+            </h3>
+            <p class="text-dark">
+              Desde cortes modernos hasta colores vibrantes y peinados
+              elegantes, nuestros estilistas crearán el look perfecto para ti.
+            </p>
+          </div>
+          <!-- Service Card 4 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">💆‍♀️</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">
+              Masajes Relajantes
+            </h3>
+            <p class="text-dark">
+              Relájate y desestrésate con nuestra gama de masajes, diseñados
+              para calmar los músculos y la mente.
+            </p>
+          </div>
+          <!-- Service Card 5 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">💄</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">
+              Maquillaje Profesional
+            </h3>
+            <p class="text-dark">
+              Ya sea para una ocasión especial o un look diario, nuestros
+              artistas realzarán tu belleza natural.
+            </p>
+          </div>
+          <!-- Service Card 6 -->
+          <div
+            class="bg-primary rounded-lg shadow-lg p-8 text-center service-card"
+          >
+            <div class="text-5xl mb-4 text-accent">👣</div>
+            <h3 class="text-2xl font-serif text-dark mb-3">Spa de Pedicura</h3>
+            <p class="text-dark">
+              Consiente tus pies con una pedicura de spa de lujo, dejándolos
+              suaves, lisos y perfectamente pulidos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mx-auto px-6 py-20">
+      <h2 class="text-4xl font-serif text-dark text-center mb-12">
+        Nuestras Creaciones
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://placehold.co/400x500/EAE0D9/5C4B42?text=Estilo+1"
+            alt="Beauty work 1"
+            class="w-full h-full object-cover gallery-img"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://placehold.co/400x500/D4BBAA/FFFFFF?text=Estilo+2"
+            alt="Beauty work 2"
+            class="w-full h-full object-cover gallery-img"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://placehold.co/400x500/F4E9E1/5C4B42?text=Estilo+3"
+            alt="Beauty work 3"
+            class="w-full h-full object-cover gallery-img"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            src="https://placehold.co/400x500/5C4B42/FFFFFF?text=Estilo+4"
+            alt="Beauty work 4"
+            class="w-full h-full object-cover gallery-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-accent-light py-12" id="contact">
+      <div class="container mx-auto px-6 text-center text-dark">
+        <p class="text-2xl font-serif mb-4">Anna Studio</p>
+        <p class="mb-4">123 Beauty Lane, Serenity City, 12345</p>
+        <p class="mb-6">contacto@annastudio.com | (123) 456-7890</p>
+        <div class="flex justify-center space-x-6 mb-8">
+          <a
+            href="#"
+            class="text-dark hover:text-accent transition duration-300"
+            >Instagram</a
+          >
+          <a
+            href="#"
+            class="text-dark hover:text-accent transition duration-300"
+            >Facebook</a
+          >
+          <a
+            href="#"
+            class="text-dark hover:text-accent transition duration-300"
+            >Pinterest</a
+          >
+        </div>
+        <p class="text-sm">
+          &copy; 2024 Anna Studio. Todos los Derechos Reservados. Diseñado con
+          ♡.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
