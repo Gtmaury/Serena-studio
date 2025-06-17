@@ -9,6 +9,7 @@ h3,
 }
 .bg-primary {
   background-color: #fdfbf8;
+  height: fit-content;
 }
 .bg-secondary {
   background-color: #f4e9e1;
@@ -62,7 +63,11 @@ h3,
   width: 100%;
   left: 0;
 }
-
+.logo {
+  width: 115px;
+  height: 100px;
+  margin: -20px 0 -20px -15px;
+}
 /* Smooth scroll for anchor links */
 html {
   scroll-behavior: smooth;
